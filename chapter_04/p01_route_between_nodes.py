@@ -75,8 +75,8 @@ class Test(unittest.TestCase):
 
     graph = {
         "A": ["B", "C"],
-        "B": ["D"],
-        "C": ["D", "E"],
+        "B": ["A", "D"],
+        "C": ["A", "D", "E"],
         "D": ["B", "C"],
         "E": ["C", "F"],
         "F": ["E", "O", "I", "G"],
